@@ -1,175 +1,186 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nome do Site — Ranking de [Tema]</title>
+  <title>SteamQuest — Ranking dos Melhores Jogos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--
-    Classes CSS que precisam ser criadas em style.css:
-    - .ranking-list   -> <ol> que envolve todos os itens do ranking
-    - .ranking-item   -> cada <li> do ranking (item individual)
-    - .posicao        -> <span> com o número da posição, dentro do <h3>
-    - .justificativa  -> parágrafo que explica a posição no ranking
-    - .link-externo   -> parágrafo que envolve o link para o site do item
-
-    IDs que também podem ser usados no CSS (menos comuns, mas existem):
-    - #apresentacao
-    - #ranking
-    -->
   <header>
-    <img src="imgs/logo_UTFPR.png" alt="Logotipo da UTFPR" width="200" height="72">
-    <h1>Nome do Site [PC]</h1>
+    <!-- Logo criado usando SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 80 50" aria-label="Logotipo em formato de controle de videogame">
+      <rect width="80" height="50" rx="25" fill="#1b2838" />
+      <circle cx="25" cy="25" r="9" fill="#66c0f4" />
+      <circle cx="55" cy="16" r="3.5" fill="#c7d5e0" />
+      <circle cx="55" cy="34" r="3.5" fill="#c7d5e0" />
+      <circle cx="46" cy="25" r="3.5" fill="#c7d5e0" />
+      <circle cx="64" cy="25" r="3.5" fill="#c7d5e0" />
+    </svg>
+    <h1>SteamQuest</h1>
   </header>
 
   <main>
-
     <section id="apresentacao">
-      <h2>Título de apresentação [PC]</h2>
+      <h2>Nossos Favoritos</h2>
       <p>
-        Texto de apresentação do ranking. Explique aqui do que se trata o site,
-        o tema escolhido e por que vale a pena conferir os itens abaixo. [PC]
+        A Steam é a maior plataforma de jogos para PC e oferece milhares de opções. 
+        Nesta lista, selecionamos os 6 jogos que mais gostamos de jogar no nosso tempo livre, 
+        avaliando desde a história até a jogabilidade. Confira o nosso ranking abaixo.
       </p>
     </section>
 
     <section id="ranking">
-      <h2>Título da seção de ranking [PC]</h2>
+      <h2>Top 6: Nossos Jogos Favoritos</h2>
 
       <ol class="ranking-list">
+        <!-- Posição 1: Hades 2 -->
         <li class="ranking-item" data-posicao="1">
           <article>
-            <h3><span class="posicao">1º</span> Nome do item 1 [PC]</h3>
-
+            <h3><span class="posicao">1º</span> Hades 2</h3>
             <figure>
               <picture>
-                <source media="(max-width: 600px)" srcset="imgs/item-1-mobile.jpg">
-                <img src="imgs/item-1-desktop.jpg" alt="Descrição da imagem do item 1 [PC]" loading="lazy">
+                <!-- Exigência: Resoluções para monitor e celular -->
+                <source media="(max-width: 600px)" srcset="imgs/hades2-mobile.jpg">
+                <img src="imgs/hades2-desktop.jpg" alt="teste" loading="lazy">
               </picture>
-              <figcaption>Legenda da imagem do item 1 [PC]</figcaption>
+              <figcaption>...</figcaption>
             </figure>
-
             <p class="justificativa">
-              Texto explicando a posição do item 1 no ranking. [PC]
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aperiam, ipsa, animi error tempore, voluptatibus soluta harum explicabo dolorum sunt nam reiciendis eveniet cum. Unde autem in aperiam perspiciatis esse?
             </p>
-
             <p class="link-externo">
-              <a href="https://exemplo.com/item-1" target="_blank" rel="noopener noreferrer">
-                Visitar site do item 1 [PC]
+              <!-- Exigência: Links que abrem novas páginas -->
+              <a href="https://store.steampowered.com/app/1145350/Hades_II/" target="_blank" rel="noopener noreferrer">
+                Acessar a página de Hades 2 na Steam
               </a>
             </p>
           </article>
         </li>
+
+        <!-- Posição 2: Subnautica -->
         <li class="ranking-item" data-posicao="2">
           <article>
-            <h3><span class="posicao">2º</span> Nome do item 2 [PC]</h3>
-
+            <h3><span class="posicao">2º</span> Subnautica</h3>
             <figure>
               <picture>
-                <source media="(max-width: 600px)" srcset="imgs/item-2-mobile.jpg">
-                <img src="imgs/item-2-desktop.jpg" alt="Descrição da imagem do item 2 [PC]" loading="lazy">
+                <source media="(max-width: 600px)" srcset="imgs/subnautica-mobile.jpg">
+                <img src="imgs/subnautica-desktop.jpg" alt="teste" loading="lazy">
               </picture>
-              <figcaption>Legenda da imagem do item 2 [PC]</figcaption>
+              <figcaption>legenda</figcaption>
             </figure>
-
             <p class="justificativa">
-              Texto explicando a posição do item 2 no ranking. [PC]
+              Na segunda posição, temos uma das melhores experiências de sobrevivência já criadas. Subnautica mistura a beleza da exploração submarina com momentos de puro terror psicológico ao mergulharmos em águas desconhecidas e abissais.
             </p>
-
             <p class="link-externo">
-              <a href="https://exemplo.com/item-2" target="_blank" rel="noopener noreferrer">
-                Visitar site do item 2 [PC]
+              <a href="https://store.steampowered.com/app/264710/Subnautica/" target="_blank" rel="noopener noreferrer">
+                Acessar a página de Subnautica na Steam
               </a>
             </p>
           </article>
         </li>
 
+        <!-- Posição 3: Age of Empires 2 (Definitive Edition) -->
         <li class="ranking-item" data-posicao="3">
           <article>
-            <h3><span class="posicao">3º</span> Nome do item 3 [PC]</h3>
-
+            <h3><span class="posicao">3º</span> Age of Empires II: Definitive Edition</h3>
             <figure>
               <picture>
-                <source media="(max-width: 600px)" srcset="imgs/item-3-mobile.jpg">
-                <img src="imgs/item-3-desktop.jpg" alt="Descrição da imagem do item 3 [PC]" loading="lazy">
+                <source media="(max-width: 600px)" srcset="imgs/aoe2-mobile.jpg">
+                <img src="imgs/aoe2-desktop.jpg" alt="teste" loading="lazy">
               </picture>
-              <figcaption>Legenda da imagem do item 3 [PC]</figcaption>
+              <figcaption>legenda</figcaption>
             </figure>
-
             <p class="justificativa">
-              Texto explicando a posição do item 3 no ranking. [PC]
+              Um clássico absoluto que resiste ao teste do tempo. Ocupando o terceiro lugar, este RTS (Estratégia em Tempo Real) oferece campanhas históricas fantásticas e um modo multiplayer competitivo que continua ativo e desafiador.
             </p>
-
             <p class="link-externo">
-              <a href="https://exemplo.com/item-3" target="_blank" rel="noopener noreferrer">
-                Visitar site do item 3 [PC]
+              <a href="https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/" target="_blank" rel="noopener noreferrer">
+                Acessar a página de Age of Empires 2 na Steam
               </a>
             </p>
           </article>
         </li>
 
+        <!-- Posição 4: The Witcher 3 -->
         <li class="ranking-item" data-posicao="4">
           <article>
-            <h3><span class="posicao">4º</span> Nome do item 4 [PC]</h3>
-
+            <h3><span class="posicao">4º</span> The Witcher 3: Wild Hunt</h3>
             <figure>
               <picture>
-                <source media="(max-width: 600px)" srcset="imgs/item-4-mobile.jpg">
-                <img src="imgs/item-4-desktop.jpg" alt="Descrição da imagem do item 4 [PC]" loading="lazy">
+                <source media="(max-width: 600px)" srcset="imgs/witcher3-mobile.jpg">
+                <img src="imgs/witcher3-desktop.jpg" alt="Geralt de Rivia montado em seu cavalo, observando a paisagem com suas espadas nas costas" loading="lazy">
               </picture>
-              <figcaption>Legenda da imagem do item 4 [PC]</figcaption>
+              <figcaption>Geralt de Rivia em sua jornada pelo vasto continente.</figcaption>
             </figure>
-
             <p class="justificativa">
-              Texto explicando a posição do item 4 no ranking. [PC]
+              A quarta posição fica com um pilar dos RPGs modernos. The Witcher 3 brilha pela sua narrativa profunda, missões secundárias incrivelmente bem escritas e um mundo vivo onde cada escolha tem um peso real na história.
             </p>
-
             <p class="link-externo">
-              <a href="https://exemplo.com/item-4" target="_blank" rel="noopener noreferrer">
-                Visitar site do item 4 [PC]
+              <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank" rel="noopener noreferrer">
+                Acessar a página de The Witcher 3 na Steam
               </a>
             </p>
           </article>
         </li>
 
+        <!-- Posição 5: CS2 -->
         <li class="ranking-item" data-posicao="5">
           <article>
-            <h3><span class="posicao">5º</span> Nome do item 5 [PC]</h3>
-
+            <h3><span class="posicao">5º</span> Counter-Strike 2 (CS2)</h3>
             <figure>
               <picture>
-                <source media="(max-width: 600px)" srcset="imgs/item-5-mobile.jpg">
-                <img src="imgs/item-5-desktop.jpg" alt="Descrição da imagem do item 5 [PC]" loading="lazy">
+                <source media="(max-width: 600px)" srcset="imgs/cs2-mobile.jpg">
+                <img src="imgs/cs2-desktop.jpg" alt="Agente terrorista segurando um rifle com a logo do CS2 ao lado" loading="lazy">
               </picture>
-              <figcaption>Legenda da imagem do item 5 [PC]</figcaption>
+              <figcaption>Ação tática e competitiva em Counter-Strike 2.</figcaption>
             </figure>
-
             <p class="justificativa">
-              Texto explicando a posição do item 5 no ranking. [PC]
+              Representando o cenário competitivo, CS2 é a evolução do FPS tático mais jogado do mundo. Ele está em nosso ranking pela mecânica viciante baseada em habilidade pura, trabalho em equipe e comunicação.
             </p>
-
             <p class="link-externo">
-              <a href="https://exemplo.com/item-5" target="_blank" rel="noopener noreferrer">
-                Visitar site do item 5 [PC]
+              <a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank" rel="noopener noreferrer">
+                Acessar a página de CS2 na Steam
               </a>
             </p>
           </article>
         </li>
 
+        <!-- Posição 6: Red Dead Redemption 2 -->
+        <li class="ranking-item" data-posicao="6">
+          <article>
+            <h3><span class="posicao">6º</span> Red Dead Redemption 2</h3>
+            <figure>
+              <picture>
+                <source media="(max-width: 600px)" srcset="imgs/rdr2-mobile.jpg">
+                <img src="imgs/rdr2-desktop.jpg" alt="Arthur Morgan olhando para a paisagem do velho oeste americano" loading="lazy">
+              </picture>
+              <figcaption>O deslumbrante mundo aberto do Velho Oeste de Red Dead Redemption 2.</figcaption>
+            </figure>
+            <p class="justificativa">
+              Fechando a nossa lista de forma épica está Red Dead Redemption 2. A obra-prima da Rockstar entrega um mundo aberto inigualável em detalhes gráficos e mecânicos, além de nos fazer vivenciar uma das histórias mais emocionantes já criadas nos games.
+            </p>
+            <p class="link-externo">
+              <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank" rel="noopener noreferrer">
+                Acessar a página de Red Dead Redemption 2 na Steam
+              </a>
+            </p>
+          </article>
+        </li>
       </ol>
     </section>
-    <footer>
-      <h2>Sobre o grupo [PC]</h2>
-      <address>
-        <p>Nome do(a) integrante 1 [PC]</p>
-        <p>Nome do(a) integrante 2 [PC]</p>
-      </address>
-      <p>&copy; 2026 Nome do Site [PC]. Trabalho acadêmico — Padrões Web / UTFPR.</p>
-    </footer>
+
   </main>
 
+  <footer>
+    <h2>Sobre o grupo</h2>
+    <address>
+      <p>João Guilherme Menegassi</p>
+      <p>Giovane</p>
+    </address>
+    <p>&copy; 2026 SteamQuest. Atividade 2 — Padrões Web / UTFPR.</p>
+  </footer>
 
 </body>
 </html>

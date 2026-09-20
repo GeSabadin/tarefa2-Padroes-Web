@@ -1,0 +1,167 @@
+/* IMPORTAÇÕES (Requisito: Fontes e Ícones FontAwesome)*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b2838;
+  color: #c7d5e0; 
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Margens e Bordas */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #171a21;
+  padding: 20px;
+  border-bottom: 2px solid #66c0f4;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  background-color: #171a21;
+  padding: 30px;
+  margin-top: 40px;
+  border-top: 2px solid #66c0f4;
+}
+
+footer h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* CONTEÚDO PRINCIPAL (Main e Seções) */
+main {
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 20px;
+}
+
+#apresentacao {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#apresentacao h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#ranking h2 {
+  color: #ffffff;
+  border-left: 4px solid #66c0f4; /* Borda decorativa */
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* LISTA DE RANKING E ITENS */
+.ranking-list {
+  list-style-type: none; /* Tira os números padrão pois já usamos o <span> */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ranking-item article {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #2a475e;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.ranking-item h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.posicao {
+  color: #66c0f4;
+  font-weight: bold;
+}
+
+/* Requisito: Filtro ou Máscara) */
+figure {
+  margin-bottom: 15px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 2px solid #2a475e;
+  
+  /* Filtro aplicado: A imagem fica preto e branco por padrão */
+  filter: grayscale(80%) sepia(20%); 
+  transition: filter 0.4s ease;
+}
+
+/* Efeito: Ao passar o mouse, a imagem ganha cor total */
+figure img:hover {
+  filter: grayscale(0%) sepia(0%);
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #8f98a0;
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.justificativa {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* 
+   LINKS E ESTADOS (Requisito: Personalizar estados e Ícones) */
+.link-externo {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* 1. Link Padrão */
+.link-externo a:link {
+  color: #66c0f4;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* 2. Link Visitado */
+.link-externo a:visited {
+  color: #a081d6; /* Fica roxinho indicando que já abriu na Steam */
+}
+
+/* 3. Hover (Ao passar o mouse) */
+.link-externo a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* 4. Active (Ao clicar) */
+.link-externo a:active {
+  color: #ff9900; /* Cor laranja de destaque ao clicar */
+}
+
+/* Ícone do FontAwesome antes do texto do link */
+.link-externo a::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f08e"; /* Código do ícone de link externo (Arrow-up-right-from-square) */
+  margin-right: 8px;
+}
