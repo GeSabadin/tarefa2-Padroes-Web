@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome do Site — Ranking de [Tema]</title>
+</head>
+
+<body>
+    <!--
+    Classes CSS que precisam ser criadas em style.css:
+    - .ranking-list   -> <ol> que envolve todos os itens do ranking
+    - .ranking-item   -> cada <li> do ranking (item individual)
+    - .posicao        -> <span> com o número da posição, dentro do <h3>
+    - .justificativa  -> parágrafo que explica a posição no ranking
+    - .link-externo   -> parágrafo que envolve o link para o site do item
+
+    IDs que também podem ser usados no CSS (menos comuns, mas existem):
+    - #apresentacao
+    - #ranking
+    -->
+  <header>
+    <img src="imgs/logo_UTFPR.png" alt="Logotipo da UTFPR" width="200" height="72">
+    <h1>Nome do Site [PC]</h1>
+  </header>
+
+  <main>
+
+    <section id="apresentacao">
+      <h2>Título de apresentação [PC]</h2>
+      <p>
+        Texto de apresentação do ranking. Explique aqui do que se trata o site,
+        o tema escolhido e por que vale a pena conferir os itens abaixo. [PC]
+      </p>
+    </section>
+
+    <section id="ranking">
+      <h2>Título da seção de ranking [PC]</h2>
+
+      <ol class="ranking-list">
+        <li class="ranking-item" data-posicao="1">
+          <article>
+            <h3><span class="posicao">1º</span> Nome do item 1 [PC]</h3>
+
+            <figure>
+              <picture>
+                <source media="(max-width: 600px)" srcset="imgs/item-1-mobile.jpg">
+                <img src="imgs/item-1-desktop.jpg" alt="Descrição da imagem do item 1 [PC]" loading="lazy">
+              </picture>
+              <figcaption>Legenda da imagem do item 1 [PC]</figcaption>
+            </figure>
+
+            <p class="justificativa">
+              Texto explicando a posição do item 1 no ranking. [PC]
+            </p>
+
+            <p class="link-externo">
+              <a href="https://exemplo.com/item-1" target="_blank" rel="noopener noreferrer">
+                Visitar site do item 1 [PC]
+              </a>
+            </p>
+          </article>
+        </li>
+        <li class="ranking-item" data-posicao="2">
+          <article>
+            <h3><span class="posicao">2º</span> Nome do item 2 [PC]</h3>
+
+            <figure>
+              <picture>
+                <source media="(max-width: 600px)" srcset="imgs/item-2-mobile.jpg">
+                <img src="imgs/item-2-desktop.jpg" alt="Descrição da imagem do item 2 [PC]" loading="lazy">
+              </picture>
+              <figcaption>Legenda da imagem do item 2 [PC]</figcaption>
+            </figure>
+
+            <p class="justificativa">
+              Texto explicando a posição do item 2 no ranking. [PC]
+            </p>
+
+            <p class="link-externo">
+              <a href="https://exemplo.com/item-2" target="_blank" rel="noopener noreferrer">
+                Visitar site do item 2 [PC]
+              </a>
+            </p>
+          </article>
+        </li>
+
+        <li class="ranking-item" data-posicao="3">
+          <article>
+            <h3><span class="posicao">3º</span> Nome do item 3 [PC]</h3>
+
+            <figure>
+              <picture>
+                <source media="(max-width: 600px)" srcset="imgs/item-3-mobile.jpg">
+                <img src="imgs/item-3-desktop.jpg" alt="Descrição da imagem do item 3 [PC]" loading="lazy">
+              </picture>
+              <figcaption>Legenda da imagem do item 3 [PC]</figcaption>
+            </figure>
+
+            <p class="justificativa">
+              Texto explicando a posição do item 3 no ranking. [PC]
+            </p>
+
+            <p class="link-externo">
+              <a href="https://exemplo.com/item-3" target="_blank" rel="noopener noreferrer">
+                Visitar site do item 3 [PC]
+              </a>
+            </p>
+          </article>
+        </li>
+
+        <li class="ranking-item" data-posicao="4">
+          <article>
+            <h3><span class="posicao">4º</span> Nome do item 4 [PC]</h3>
+
+            <figure>
+              <picture>
+                <source media="(max-width: 600px)" srcset="imgs/item-4-mobile.jpg">
+                <img src="imgs/item-4-desktop.jpg" alt="Descrição da imagem do item 4 [PC]" loading="lazy">
+              </picture>
+              <figcaption>Legenda da imagem do item 4 [PC]</figcaption>
+            </figure>
+
+            <p class="justificativa">
+              Texto explicando a posição do item 4 no ranking. [PC]
+            </p>
+
+            <p class="link-externo">
+              <a href="https://exemplo.com/item-4" target="_blank" rel="noopener noreferrer">
+                Visitar site do item 4 [PC]
+              </a>
+            </p>
+          </article>
+        </li>
+
+        <li class="ranking-item" data-posicao="5">
+          <article>
+            <h3><span class="posicao">5º</span> Nome do item 5 [PC]</h3>
+
+            <figure>
+              <picture>
+                <source media="(max-width: 600px)" srcset="imgs/item-5-mobile.jpg">
+                <img src="imgs/item-5-desktop.jpg" alt="Descrição da imagem do item 5 [PC]" loading="lazy">
+              </picture>
+              <figcaption>Legenda da imagem do item 5 [PC]</figcaption>
+            </figure>
+
+            <p class="justificativa">
+              Texto explicando a posição do item 5 no ranking. [PC]
+            </p>
+
+            <p class="link-externo">
+              <a href="https://exemplo.com/item-5" target="_blank" rel="noopener noreferrer">
+                Visitar site do item 5 [PC]
+              </a>
+            </p>
+          </article>
+        </li>
+
+      </ol>
+    </section>
+    <footer>
+      <h2>Sobre o grupo [PC]</h2>
+      <address>
+        <p>Nome do(a) integrante 1 [PC]</p>
+        <p>Nome do(a) integrante 2 [PC]</p>
+      </address>
+      <p>&copy; 2026 Nome do Site [PC]. Trabalho acadêmico — Padrões Web / UTFPR.</p>
+    </footer>
+  </main>
+
+
+</body>
+</html>
